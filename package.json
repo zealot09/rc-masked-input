@@ -1,0 +1,51 @@
+{
+  "name": "rc-mask-input",
+  "version": "1.0.0",
+  "description": "mask-input ui component for react",
+  "keywords": [
+    "react",
+    "react-component",
+    "react-mask-input",
+    "mask-input"
+  ],
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "homepage": "https://github.com/react-component/mask-input",
+  "author": "guol.zealot@gmail.com",
+
+  "repository": "react-component/mask-input",
+
+  "bugs": "https://github.com/react-component/mask-input/issues",
+  "files":["lib", "assets/*.css"],
+  "license": "MIT",
+
+  "main":"./lib/index",
+  "config":{
+    "port": 8021
+  },
+  "scripts": {
+    "build": "rc-tools run build",
+    "gh-pages": "rc-tools run gh-pages",
+    "start": "rc-tools run server",
+    "pub": "rc-tools run pub",
+    "lint": "rc-tools run lint",
+    "karma": "rc-tools run karma",
+    "saucelabs": "rc-tools run saucelabs",
+    "test": "rc-tools run test",
+    "chrome-test": "rc-tools run chrome-test",
+    "coverage": "rc-tools run coverage"
+  },
+  "devDependencies": {
+    "expect.js": "0.3.x",
+    "pre-commit": "1.x",
+    "rc-tools": "5.x",
+    "react": "0.14.x",
+    "react-addons-test-utils": "0.14.x",
+    "react-dom": "0.14.x",
+    "object-assign": "4.0.x"
+  },
+  "pre-commit": [
+    "lint"
+  ]
+}
