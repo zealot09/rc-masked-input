@@ -2,6 +2,8 @@
 ---
 
 React MaskInput Component
+Just for format mobile numbers, bankcard numbers, credit card numbers...
+Auto blank for those numbers, special for mobile devices, fix bugs when using different language input methods
 
 
 [![NPM version][npm-image]][npm-url]
@@ -41,7 +43,7 @@ npm start
 http://localhost:8021/examples/
 
 
-online example: http://react-component.github.io/mask-input/
+online example: http://zealot09.github.io/rc-masked-input/
 
 
 ## install
@@ -52,10 +54,20 @@ online example: http://react-component.github.io/mask-input/
 
 ## Usage
 
+default is mobile format, split the mobile number like `15984382312` as `[3, 4, 4]` auto format to `159 8438 2312`
+
+just define group attribute
 ```js
 var MaskInput = require('rc-mask-input');
 var React = require('react');
 React.render(<MaskInput />, container);
+```
+
+bankcards? 622202xxxxxxxx format as the given group
+```js
+var MaskInput = require('rc-mask-input');
+var React = require('react');
+React.render(<MaskInput group={[4, 4, 4, 4, 3]} />, container);
 ```
 
 ## API

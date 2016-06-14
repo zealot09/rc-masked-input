@@ -1,6 +1,6 @@
 {
   "name": "rc-mask-input",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "mask-input ui component for react",
   "keywords": [
     "react",
@@ -11,12 +11,12 @@
   "engines": {
     "node": ">=4.0.0"
   },
-  "homepage": "https://github.com/react-component/mask-input",
+  "homepage": "https://github.com/zealot09/rc-masked-input",
   "author": "guol.zealot@gmail.com",
 
   "repository": "react-component/mask-input",
 
-  "bugs": "https://github.com/react-component/mask-input/issues",
+  "bugs": "https://github.com/zealot09/rc-masked-input/issues",
   "files":["lib", "assets/*.css"],
   "license": "MIT",
 
